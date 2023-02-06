@@ -1,2 +1,4 @@
 server/node_modules
 server/package-lock.json
+frontend/todo-app/node_modules
+frontend/todo-app/package-lock.json
