@@ -9,7 +9,7 @@ function ShowTaskList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8082/api/tasks')
+      .get('http://localhost:5000/api/tasks')
       .then((res) => {
         setTasks(res.data);
       })

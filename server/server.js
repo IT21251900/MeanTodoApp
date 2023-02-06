@@ -1,11 +1,24 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+
+const cors = require('cors');
 const app = express();
 
+// routes
+const tasks = require('./routes/api/tasks');
 
 const routes = require('./routes/api/tasks');
-app.use('/api', routes);
+// cors
+app.use(cors({ origin: true, credentials: true }));
+
+// Init Middleware
+app.use(express.json({ extended: false }));
+
+app.get('/', (req, res) => res.send('Hello world!'));
+
+// use Routes
+app.use('/api/tasks', tasks);
 
 // app.get('/', (req, res) => res.send('server works!'));
 
@@ -27,3 +40,7 @@ mongoose
   .catch(err => console.log(err));
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+
+
+
+
