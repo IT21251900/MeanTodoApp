@@ -1,12 +1,21 @@
 # Run App
 
-server :
+## server :
+
 cd server
+
+npm i
+
 npm run app
 
-frontend :
+## frontend :
+
 cd frontend
+
 cd todo-app
+
+npm i
+
 npm start
 
 ## Issues and improvements
