@@ -1,4 +1,11 @@
 # Run App
 
-server : npm run app
+server :
+cd server
+npm run app
+
+frontend :
+cd frontend
+cd todo-app
+npm start
 
