@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -32,25 +33,25 @@
   }
 }
 
-.CreateBook {
+.CreateTask {
   background-color: #2c3e50;
   min-height: 100vh;
   color: white;
 }
 
-.ShowBookDetails {
+.ShowTaskDetails {
   background-color: #2c3e50;
   min-height: 100vh;
   color: white;
 }
 
-.UpdateBookInfo {
+.UpdateTaskInfo {
   background-color: #2c3e50;
   min-height: 100vh;
   color: white;
 }
 
-.ShowBookList {
+.ShowTaskList {
   background-color: #2c3e50;
   height: 100%;
   width: 100%;
